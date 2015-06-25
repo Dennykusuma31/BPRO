@@ -1,0 +1,18 @@
+import java.util.*;
+import java.io.*;
+public class menghitung_bunga {
+public static void main(String[]args) throws IOException{
+BufferedReader input=new BufferedReader(new InputStreamReader(System.in));
+System.out.print("Masukkan Saldo Awal : ");
+int saldo_awal=Integer.parseInt(input.readLine());
+System.out.println("Bunga 4% , 5% , 6% , dan 7 %");
+int empat=saldo_awal+saldo_awal*4;
+int lima=saldo_awal+saldo_awal*5;
+int enam=saldo_awal+saldo_awal*6;
+int tuju=saldo_awal+saldo_awal*7;
+System.out.println("========================================================================");
+System.out.println("Tahun Ke 1:");
+System.out.println("Bunga 4% = "+empat);
+System.out.println("Bunga 5% = "+lima);
+System.out.println("Bunga 6% = "+enam);
+System.out.println("Bunga 7% = "+tuju);
